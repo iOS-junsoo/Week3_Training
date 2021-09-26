@@ -13,6 +13,10 @@
 		99DB50E827002023004140BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DB50E627002023004140BD /* Main.storyboard */; };
 		99DB50EA27002025004140BD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 99DB50E927002025004140BD /* Assets.xcassets */; };
 		99DB50ED27002025004140BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 99DB50EB27002025004140BD /* LaunchScreen.storyboard */; };
+		99DB511B27004EE2004140BD /* Memo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB511A27004EE2004140BD /* Memo.swift */; };
+		99DB511E270053E6004140BD /* MemoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB511C270053E6004140BD /* MemoTableViewCell.swift */; };
+		99DB511F270053E6004140BD /* MemoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 99DB511D270053E6004140BD /* MemoTableViewCell.xib */; };
+		99DB512127006F21004140BD /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99DB512027006F21004140BD /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +28,11 @@
 		99DB50E927002025004140BD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		99DB50EC27002025004140BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		99DB50EE27002025004140BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		99DB511A27004EE2004140BD /* Memo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Memo.swift; sourceTree = "<group>"; };
+		99DB511C270053E6004140BD /* MemoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemoTableViewCell.swift; sourceTree = "<group>"; };
+		99DB511D270053E6004140BD /* MemoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MemoTableViewCell.xib; sourceTree = "<group>"; };
+		99DB512027006F21004140BD /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		99DB512227007493004140BD /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +49,7 @@
 		99DB50D427002023004140BD = {
 			isa = PBXGroup;
 			children = (
+				99DB512227007493004140BD /* README.md */,
 				99DB50DF27002023004140BD /* Week3_Training */,
 				99DB50DE27002023004140BD /* Products */,
 			);
@@ -56,15 +66,59 @@
 		99DB50DF27002023004140BD /* Week3_Training */ = {
 			isa = PBXGroup;
 			children = (
-				99DB50E027002023004140BD /* AppDelegate.swift */,
-				99DB50E227002023004140BD /* SceneDelegate.swift */,
-				99DB50E427002023004140BD /* ViewController.swift */,
-				99DB50E627002023004140BD /* Main.storyboard */,
-				99DB50E927002025004140BD /* Assets.xcassets */,
-				99DB50EB27002025004140BD /* LaunchScreen.storyboard */,
-				99DB50EE27002025004140BD /* Info.plist */,
+				99DB511527004A1F004140BD /* Asset */,
+				99DB511627004A34004140BD /* App */,
+				99DB511727004A3C004140BD /* Model */,
+				99DB511827004A45004140BD /* Controller */,
+				99DB511927004B32004140BD /* View */,
 			);
 			path = Week3_Training;
+			sourceTree = "<group>";
+		};
+		99DB511527004A1F004140BD /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				99DB50EE27002025004140BD /* Info.plist */,
+				99DB50E927002025004140BD /* Assets.xcassets */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		99DB511627004A34004140BD /* App */ = {
+			isa = PBXGroup;
+			children = (
+				99DB50E027002023004140BD /* AppDelegate.swift */,
+				99DB50E227002023004140BD /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		99DB511727004A3C004140BD /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				99DB511A27004EE2004140BD /* Memo.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		99DB511827004A45004140BD /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				99DB50E427002023004140BD /* ViewController.swift */,
+				99DB512027006F21004140BD /* SecondViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		99DB511927004B32004140BD /* View */ = {
+			isa = PBXGroup;
+			children = (
+				99DB50E627002023004140BD /* Main.storyboard */,
+				99DB50EB27002025004140BD /* LaunchScreen.storyboard */,
+				99DB511C270053E6004140BD /* MemoTableViewCell.swift */,
+				99DB511D270053E6004140BD /* MemoTableViewCell.xib */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +182,7 @@
 				99DB50ED27002025004140BD /* LaunchScreen.storyboard in Resources */,
 				99DB50EA27002025004140BD /* Assets.xcassets in Resources */,
 				99DB50E827002023004140BD /* Main.storyboard in Resources */,
+				99DB511F270053E6004140BD /* MemoTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,9 +193,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				99DB512127006F21004140BD /* SecondViewController.swift in Sources */,
+				99DB511E270053E6004140BD /* MemoTableViewCell.swift in Sources */,
 				99DB50E527002023004140BD /* ViewController.swift in Sources */,
 				99DB50E127002023004140BD /* AppDelegate.swift in Sources */,
 				99DB50E327002023004140BD /* SceneDelegate.swift in Sources */,
+				99DB511B27004EE2004140BD /* Memo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,7 +349,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXFMRW69P3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Week3_Training/Info.plist;
+				INFOPLIST_FILE = Week3_Training/Asset/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -319,7 +377,7 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = JXFMRW69P3;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = Week3_Training/Info.plist;
+				INFOPLIST_FILE = Week3_Training/Asset/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
